@@ -11,8 +11,8 @@ app1.get('/', function(req, res){
           res.render('index');
 });
 
-const PORT=3000;
-const IP='127.0.0.1';
+const PORT=process.env.PORT;
+const IP=process.env.PORT;
 
 app1.listen(PORT, IP, function(){
 console.log("Node server is up and running");
